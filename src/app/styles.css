@@ -1,0 +1,11 @@
+.div-photo {
+  clip-path: path("M 50, 50 a 40, 40 0 0 1 0, 0");
+}
+
+.photo-grid {
+  grid-template-areas: "center";
+}
+
+.photo-grid > * {
+  grid-area: center;
+}

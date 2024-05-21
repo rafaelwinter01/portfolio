@@ -1,0 +1,13 @@
+.parent:hover .child {
+  opacity: 0;
+}
+
+.parent:hover .image {
+  opacity: 100;
+}
+
+@media (min-width: 768px) {
+  .parent:hover .child {
+    opacity: 100;
+  }
+}

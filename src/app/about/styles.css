@@ -1,0 +1,24 @@
+.p1 {
+  animation: show 0.5s ease-in-out 1;
+}
+
+.p2 {
+  animation: show 1s ease-in-out 1;
+}
+
+.p3 {
+  animation: show 1.5s ease-in-out 1;
+}
+
+.p4 {
+  animation: show 2s ease-in-out 1;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}

@@ -1,0 +1,79 @@
+:root {
+  --anim-time: 3s;
+  --primary-color: rgb(203, 213, 225);
+}
+
+.svg-icon {
+  width: 16em;
+  height: 16em;
+
+  background-color: aqua;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  /* fill: #4691f6; */
+  fill: var(--primary-color);
+}
+
+.svg-icon circle {
+  /* stroke: #4691f6; */
+  fill: var(--primary-color);
+  stroke-width: 1;
+}
+
+.line {
+  margin-top: 0.7em;
+  width: 0em;
+  height: 0.4em;
+  background-color: var(--primary-color);
+}
+
+.l1 {
+  animation: written var(--anim-time) ease-in-out 0s forwards;
+}
+.l2 {
+  animation: written var(--anim-time) ease-in-out 0.25s forwards;
+}
+.l3 {
+  animation: written var(--anim-time) ease-in-out 0.5s forwards;
+}
+.l4 {
+  animation: written var(--anim-time) ease-in-out 0.75s forwards;
+}
+.l5 {
+  animation: written var(--anim-time) ease-in-out 1s forwards;
+}
+
+.l6 {
+  animation: written var(--anim-time) ease-in-out 1.25s forwards;
+}
+
+@keyframes written {
+  0% {
+    width: 0em;
+    transform: translateX(0em);
+    opacity: 100;
+  }
+  50% {
+    width: 10em;
+    transform: translateX(0em);
+  }
+  70% {
+    width: 10em;
+    transform: translateX(0em);
+    opacity: 100;
+  }
+  80% {
+    width: 2em;
+    transform: translateX(4em);
+    opacity: 100;
+  }
+  100% {
+    transform: translateX(4em);
+    width: 2em;
+    opacity: 0;
+    display: hidden;
+  }
+}
